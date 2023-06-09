@@ -11,24 +11,27 @@ Custom Light / Dark Theme
     --bkg1: hsl(0, 0%, 95%);
     --bkg2: hsl(220, 19%, 59%);
     --switchbg: hsl(0, 0%, 86%);
-    --circlebg: hsl(0, 0%, 65%);
-    --circle-pos: .22rem;
-    --icon-sun: hsl(64, 91%, 45%);
-    --icon-moon: hsl(220, 86%, 28%);
+    --circlebg: hsl(65, 73%, 44%);
+    --circle-pos: .3rem;
+    --icon-sun: hsl(0, 0%, 95%);
+    --icon-moon: hsla(0, 0%, 60%, 0.689);
     --shadow: 20px 20px 50px hsl(255, 36%, 17%, .35),
     -30px -30px 50px hsl(26, 37%, 96%, .15);
     --default-transition: color .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out, fill .3s ease-in-out, transform .3s ease-in-out;
 }
 
 :root[color-theme = "dark"] {
-    --bkg1: hsl(0, 0%, 95%);
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    
+    --text: hsl(0, 0%, 95%);
     --bkg1: hsl(218, 15.4%, 10.2%);
     --bkg2: hsl(220, 15%, 27%);
-    --switchbg: hsl(218, 91%, 73%);
-    --circlebg: hsl(64, 57%, 44%);
-    --circle-pos: .22rem;
-    --icon-sun: hsl(216, 8%, 76%);
-    --icon-moon: hsl(220, 86%, 28%);
+    --switchbg: hsl(220, 15%, 27%);
+    --circlebg: hsl(246, 66%, 38%);
+    --circle-pos: 3.13rem;
+    --icon-sun: hsla(0, 0%, 60%, 0.689);
+    --icon-moon: hsl(0, 0%, 95%);
     --shadow: 20px 20px 50px hsl(255, 36%, 17%, .35),
     -30px -30px 50px hsla(26, 37%, 26%, 0.427);
     --default-transition: color .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out, fill .3s ease-in-out, transform .3s ease-in-out;
@@ -59,8 +62,7 @@ Button Styling
     background-color: var(--circlebg);
     border-radius: 50%;
     z-index: 0;
-    left: .3rem;
-    transform: translateX(--circle-pos);
+    left: var(--circle-pos);
 }
 
 #theme-switcher svg {
