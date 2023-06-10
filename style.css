@@ -7,6 +7,7 @@ Custom Light / Dark Theme
     scroll-behavior: smooth;
     scroll-padding-top: 2rem;
     
+    
     --text: hsl(218, 15.4%, 10.2%);
     --bkg1: hsl(0, 0%, 95%);
     --bkg2: hsl(220, 19%, 59%);
@@ -14,10 +15,10 @@ Custom Light / Dark Theme
     --circlebg: hsl(65, 73%, 44%);
     --circle-pos: .3rem;
     --icon-sun: hsl(0, 0%, 95%);
-    --icon-moon: hsla(0, 0%, 60%, 0.689);
+    --icon-moon: hsl(0, 0%, 95%);
     --shadow: 20px 20px 50px hsl(255, 36%, 17%, .35),
     -30px -30px 50px hsl(26, 37%, 96%, .15);
-    --default-transition: color .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out, fill .3s ease-in-out, transform .3s ease-in-out;
+    --default-transition: color .3s ease-in-out, fill .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out, fill .3s ease-in-out, transform .3s ease-in-out;
 }
 
 :root[color-theme = "dark"] {
@@ -31,7 +32,7 @@ Custom Light / Dark Theme
     --circlebg: hsl(246, 66%, 38%);
     --circle-pos: 3.13rem;
     --icon-sun: hsla(0, 0%, 60%, 0.689);
-    --icon-moon: hsl(0, 0%, 95%);
+    --icon-moon: hsla(0, 0%, 60%, 0.689);
     --shadow: 20px 20px 50px hsl(255, 36%, 17%, .35),
     -30px -30px 50px hsla(26, 37%, 26%, 0.427);
     --default-transition: color .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out, fill .3s ease-in-out, transform .3s ease-in-out;
@@ -69,13 +70,14 @@ Button Styling
     z-index: 1;
 }
 
+#icon-moon {
+    fill: var(--icon-sun);
+}
+
 #icon-sun {
     fill: var(--icon-sun);
 }
 
-#icon-moon {
-    fill: var(--icon-moon);
-}
 
 
 .color-theme {
@@ -92,22 +94,6 @@ Button Styling
 .color-theme:is(:hover, :focus){
     background-color: var(--bkg1);
     opacity: .8;
-}
-
-.btn {
-    padding: .8rem 1.5rem;
-    display: flex;
-    align-items: cent;
-    gap: .5rem;
-    max-width: max-content;
-    box-shadow: 4px 4px var(--text);
-    text-decoration: none;
-    transition: all 200ms cubic-bezier(1, -0.04, 0, 1.21);
-}
-
-.btn:is(:hover, :focus){
-    transform: translate(4px, 4px);
-    box-shadow: none;
 }
 
 /*
@@ -128,14 +114,17 @@ nav {
     font-size: larger;
     align-items: center;
     letter-spacing: 3px;
-
+    transition: var(--default-transition);
 }
+
 .navbar i{
     color: solid var(--bkg2);
 }
+
 .navbar .menu{
     display: flex;
 }
+
 .navbar ul{
     list-style: none;
 }
@@ -155,6 +144,7 @@ Components
     margin:0;
     padding:0;
     box-sizing: border-box;
+    transition: var(--default-transition);
 }
 body{
     color: var(--text);
@@ -163,7 +153,6 @@ body{
     transition: var(--default-transition);
     background-attachment: fixed;
     font-family: sans-serif;
-
 }
 section{
     width:80vw;
@@ -173,10 +162,14 @@ section{
     line-height: 25px;
     background-image: var(--bkg1);
     background-color: var(--bkg1);
-    transition: var(--default-transition);
-
 }
 h1{
     margin-bottom: 20px;
     color: var(--text);
+    transition: var(--default-transition);
+}
+p{
+    margin-bottom: 20px;
+    color: var(--text);
+    transition: var(--default-transition);
 }
