@@ -133,7 +133,7 @@ nav {
     margin-right:38px;
     text-decoration: none;  
     color:var(--text);
-    background-color: var(--bkg1);
+    background-color: transparent;
 }
 
 /*
@@ -155,9 +155,6 @@ body{
     font-family: sans-serif;
 }
 section{
-    width: 880px;
-    margin:5% auto;
-    padding-top:40;
     text-align: center;
     line-height: 25px;
     align-items: center;
@@ -175,13 +172,18 @@ p{
     color: var(--text);
     transition: var(--default-transition);
 }
-img {
-    border-radius: 30%;
-}
 
-/*
-Fancy Containers
-*/
+#profilePic  {
+    float: left;    
+    margin-left: 130px;
+    padding-right: 20px;
+    border-radius: 30%;
+    height: 350px;
+}
+#intro {
+    margin-right: 260px;
+    margin-top: 20px;
+}
 
 .border {
     margin-top: 20px;
@@ -192,33 +194,67 @@ Fancy Containers
     height: auto;
 }
 
-/*
-Project Page Accordian
-*/
-
-body {
-    line-height: 1.5;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light";
-    font-weight: 300;
-
-}
-h3 {
-    margin: 0;
-    font-size: 1.4em;
-    line-height: 1.2;
-}
 .container2 {
     max-width: 40em;
     position: relative;
     margin: 2em auto;
     box-shadow: var(--bkg2) 0 0 77px;
     margin-bottom: 400px;
-
 }
+
 label {
     display: block;
     overflow: hidden;
 }
+
+#flexContainer {
+    margin-top: 40px;
+    margin-left: 130px;
+    margin-right: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#flexContainer2 {
+    margin-top: 15px;
+    margin-left: 130px;
+    margin-right: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flexItem {
+    width: 24%;
+    height: 200px;
+    border: 2px var(--text) solid;
+    border-radius: 20%;
+    background: var(--bkg1);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.flex {
+    text-align: center;
+    padding-top: 5px;
+}
+
+#copy {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.flexLists {
+    list-style-position: inside;
+    color: var(--text);
+}
+
+
+/*
+Project Page Accordian
+*/
+
 .title {
     padding: 1em 3em;
     z-index: 1;
@@ -241,6 +277,8 @@ label {
     padding: 1.2em 3em;
     margin: 0;
     opacity: 0;
+    transform: scale(0);
+    transition: all .55s ease;
 }
 input[type="checkbox"] {
     display: none;
@@ -253,4 +291,5 @@ input[type="checkbox"]:checked + .title + .content {
 }
 input[type="checkbox"]:checked + .title + .content p {
     opacity: 1;
+    transform: scale(1);
 }
