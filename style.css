@@ -155,11 +155,12 @@ body{
     font-family: sans-serif;
 }
 section{
-    width:80vw;
+    width: 880px;
     margin:5% auto;
     padding-top:40;
     text-align: center;
     line-height: 25px;
+    align-items: center;
     background-image: var(--bkg1);
     background-color: var(--bkg1);
 }
@@ -169,7 +170,24 @@ h1{
     transition: var(--default-transition);
 }
 p{
-    margin-bottom: 20px;
+    margin-bottom: 1px;
+    text-align: center;
     color: var(--text);
     transition: var(--default-transition);
+}
+img {
+    border-radius: 30%;
+}
+
+/*
+Fancy Containers
+*/
+
+.border {
+    margin-top: 20px;
+    border-radius: 25px;
+    border: 2px solid #000000;
+    padding: 20px;
+    width: auto;
+    height: auto;
 }
