@@ -13,7 +13,7 @@ Custom Light / Dark Theme
     --bkg2: hsl(220, 19%, 59%);
     --switchbg: hsl(0, 0%, 86%);
     --circlebg: hsl(65, 73%, 44%);
-    --circle-pos: .3rem;
+    --circle-pos: .32rem;
     --icon-sun: hsl(0, 0%, 95%);
     --icon-moon: hsl(0, 0%, 95%);
     --shadow: 20px 20px 50px hsl(255, 36%, 17%, .35),
@@ -25,12 +25,12 @@ Custom Light / Dark Theme
     scroll-behavior: smooth;
     scroll-padding-top: 2rem;
     
-    --text: hsl(0, 0%, 95%);
+    --text: hsl(0, 0%, 89%);
     --bkg1: hsl(218, 15.4%, 10.2%);
     --bkg2: hsl(220, 15%, 27%);
     --switchbg: hsl(220, 15%, 27%);
     --circlebg: hsl(246, 66%, 38%);
-    --circle-pos: 3.13rem;
+    --circle-pos: 3.07rem;
     --icon-sun: hsla(0, 0%, 60%, 0.689);
     --icon-moon: hsla(0, 0%, 60%, 0.689);
     --shadow: 20px 20px 50px hsl(255, 36%, 17%, .35),
@@ -190,4 +190,67 @@ Fancy Containers
     padding: 20px;
     width: auto;
     height: auto;
+}
+
+/*
+Project Page Accordian
+*/
+
+body {
+    line-height: 1.5;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light";
+    font-weight: 300;
+
+}
+h3 {
+    margin: 0;
+    font-size: 1.4em;
+    line-height: 1.2;
+}
+.container2 {
+    max-width: 40em;
+    position: relative;
+    margin: 2em auto;
+    box-shadow: var(--bkg2) 0 0 77px;
+    margin-bottom: 400px;
+
+}
+label {
+    display: block;
+    overflow: hidden;
+}
+.title {
+    padding: 1em 3em;
+    z-index: 1;
+    color: var(--text);
+    background: var(--bkg1);
+    border: 1px solid var(--bkg2);
+}
+.title:hover {
+    cursor: pointer;
+    background: var(--shadow);
+}
+.content {
+    position: relative;
+    padding: 0;
+    max-height: 0px;
+    border-bottom: 1px solid var(--shadow);
+}
+.content p {
+    position: relative;
+    padding: 1.2em 3em;
+    margin: 0;
+    opacity: 0;
+}
+input[type="checkbox"] {
+    display: none;
+}
+input[type="checkbox"]:checked + .title {
+    background: var(--shadow);
+}
+input[type="checkbox"]:checked + .title + .content {
+    max-height: 555px;
+}
+input[type="checkbox"]:checked + .title + .content p {
+    opacity: 1;
 }
