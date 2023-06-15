@@ -148,10 +148,8 @@ Components
 }
 body{
     color: var(--text);
-    background-image: var(--bkg1);
     background-color: var(--bkg1);
     transition: var(--default-transition);
-    background-attachment: fixed;
     font-family: sans-serif;
 }
 section{
@@ -180,22 +178,24 @@ p{
     border-radius: 30%;
     height: 350px;
 }
+
 #intro {
     margin-right: 260px;
     margin-top: 20px;
     padding-left: 130px;
 }
 
-.border {
+.border-about {
+    
     margin-top: 20px;
     border-radius: 25px;
-    border: 2px solid #000000;
+    border: 2px solid var(--text);
     padding: 20px;
     width: auto;
     height: auto;
 }
 
-.container2 {
+.projectContainer {
     max-width: 40em;
     position: relative;
     margin: 2em auto;
@@ -212,6 +212,7 @@ label {
     margin-top: 60px;
     margin-left: 130px;
     margin-right: 130px;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -227,7 +228,6 @@ label {
 }
 
 .flexItem {
-    width: 24%;
     height: 200px;
     border: 2px var(--text) solid;
     border-radius: 20%;
@@ -241,14 +241,14 @@ label {
     padding-top: 5px;
 }
 
-#copy {
-    text-align: center;
-    margin-top: 30px;
-}
-
 .flexLists {
     list-style-position: inside;
     color: var(--text);
+}
+
+#copy {
+    text-align: center;
+    margin-top: 30px;
 }
 
 #picText {
