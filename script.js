@@ -11,3 +11,8 @@ const switchTheme = () => {
 }
 
 document.querySelector('#theme-switcher').addEventListener('click', switchTheme)
+
+
+
+
+
