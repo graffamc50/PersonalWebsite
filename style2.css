@@ -1,0 +1,109 @@
+/*
+    <link rel="stylesheet" href="style2.css">
+*/
+
+
+@import url("style.css");
+
+/*
+CSS for Bubble Text Boxes Interactive Rotation
+*/
+
+
+#container1 {
+    perspective: 14px;
+    width: 24%;
+}
+
+#container2 {
+    perspective: 14px;
+    width: 24%;
+}
+
+#container3 {
+    perspective: 14px;
+    width: 24%;
+}
+
+#container4 {
+    perspective: 14px;
+    width: 24%;
+}
+
+#container5 {
+    perspective: 14px;
+    width: 24%;
+}
+
+#container6 {
+    perspective: 14px;
+    width: 24%;
+}
+
+#container7 {
+    perspective: 14px;
+    width: 24%;
+}
+
+#container8 {
+    perspective: 14px;
+    width: 24%;
+}
+
+#inner1 {
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+}
+
+#inner2 {
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+}
+
+#inner3 {
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+}
+
+#inner4 {
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+}
+
+#inner5 {
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+}
+
+#inner6 {
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+}
+
+#inner7 {
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+}
+
+#inner8 {
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+}
+
+
