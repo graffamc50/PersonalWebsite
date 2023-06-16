@@ -10,43 +10,64 @@ CSS for Bubble Text Boxes Interactive Rotation
 */
 
 
+.pBubble span {
+    display: inline-block;
+    padding-top: 6px;
+    padding-right: 7px;
+    text-align: center;
+    position: relative;
+    animation-delay: calc(.08s * var(--i));
+    animation-name: bubbleText;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bubbleText {
+    0% {color: var(--text); transform: translateY(0);}
+    50% {color: var(--circlebg); transform: translateY(0);}
+    100% {color: var(--text); transform: translateY(0);}    
+    20% {transform: translateY(-3px);}
+}
+
+
+
 #container1 {
-    perspective: 14px;
+    perspective: 25px;
     width: 24%;
 }
 
 #container2 {
-    perspective: 14px;
+    perspective: 25px;
     width: 24%;
 }
 
 #container3 {
-    perspective: 14px;
+    perspective: 25px;
     width: 24%;
 }
 
 #container4 {
-    perspective: 14px;
+    perspective: 25px;
     width: 24%;
 }
 
 #container5 {
-    perspective: 14px;
+    perspective: 25px;
     width: 24%;
 }
 
 #container6 {
-    perspective: 14px;
+    perspective: 25px;
     width: 24%;
 }
 
 #container7 {
-    perspective: 14px;
+    perspective: 25px;
     width: 24%;
 }
 
 #container8 {
-    perspective: 14px;
+    perspective: 25px;
     width: 24%;
 }
 
