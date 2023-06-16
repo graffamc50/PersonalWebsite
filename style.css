@@ -10,7 +10,7 @@ Custom Light / Dark Theme
     
     --text: hsl(218, 15.4%, 10.2%);
     --bkg1: hsl(0, 0%, 95%);
-    --bkg2: hsl(220, 19%, 59%);
+    --bkg2: hsl(219, 9%, 45%);
     --switchbg: hsl(0, 0%, 86%);
     --circlebg: hsl(65, 60%, 51%);
     --circle-pos: .32rem;
@@ -27,7 +27,7 @@ Custom Light / Dark Theme
     
     --text: hsl(0, 0%, 89%);
     --bkg1: hsl(218, 15.4%, 10.2%);
-    --bkg2: hsl(220, 15%, 27%);
+    --bkg2: hsl(222, 13%, 59%);
     --switchbg: hsl(220, 15%, 27%);
     --circlebg: hsl(246, 66%, 38%);
     --circle-pos: 3.07rem;
@@ -154,8 +154,8 @@ body{
 }
 section{
     text-align: center;
-    line-height: 25px;
     align-items: center;
+    line-height: 25px;
     background-image: var(--bkg1);
     background-color: var(--bkg1);
 }
@@ -171,6 +171,43 @@ p{
     transition: var(--default-transition);
 }
 
+#resumeHeaders {
+    color: var(--circlebg);
+}
+
+#resumeContainer1 {
+    text-align: center;
+}
+#resumeContainer2 {
+    display: inline-block;
+    text-align: left;
+}
+#titleLineExp {
+    color: var(--text);
+    padding-top: 5px;
+}
+#titleLineExp location {
+    font-size: 80%; font-weight: normal;
+}
+#titleLineExp length {
+    font-size: 70%; font-weight: normal;
+    color: var(--bkg2);
+}
+#titleLineEdu {
+    color: var(--text);
+    padding-top: 5px;
+}
+#titleLineEdu titles{
+    font-size: 85%;
+}
+#titleLineEdu location {
+    font-size: 80%; font-weight: normal;
+}
+#titleLineEdu length {
+    font-size: 70%; font-weight: normal;
+    color: var(--bkg2);
+}
+
 #profilePic  {
     float: left;    
     margin-left: 130px;
@@ -183,16 +220,6 @@ p{
     margin-right: 260px;
     margin-top: 20px;
     padding-left: 130px;
-}
-
-.border-about {
-    
-    margin-top: 20px;
-    border-radius: 25px;
-    border: 2px solid var(--text);
-    padding: 20px;
-    width: auto;
-    height: auto;
 }
 
 .projectContainer {
