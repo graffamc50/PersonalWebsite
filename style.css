@@ -7,12 +7,11 @@ Custom Light / Dark Theme
     scroll-behavior: smooth;
     scroll-padding-top: 2rem;
     
-    
     --text: hsl(218, 15.4%, 10.2%);
     --bkg1: hsl(0, 0%, 95%);
     --bkg2: hsl(219, 9%, 45%);
     --switchbg: hsl(0, 0%, 86%);
-    --circlebg: hsl(65, 60%, 51%);
+    --circlebg: hsl(57, 86%, 45%);
     --circle-pos: .32rem;
     --icon-sun: hsl(0, 0%, 95%);
     --icon-moon: hsl(0, 0%, 95%);
