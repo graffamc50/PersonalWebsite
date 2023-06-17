@@ -343,3 +343,32 @@ input[type="checkbox"]:checked + .title + .content p {
     transform: scale(1);
 }
 
+/*
+Contact Page
+*/
+
+
+
+#buttonsContainer {
+    width: 25%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#contactButton {
+    height: 100px;
+    width: 100px;
+    padding-top: 16px;
+    align-items: center;
+    border: 2px var(--text) solid;
+    border-radius: 20%;
+    background: hsl(0, 0%, 95%);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#contactButtonPics {
+    height: auto;
+}
