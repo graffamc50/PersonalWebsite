@@ -187,6 +187,7 @@ p{
 }
 #titleLineExp location {
     font-size: 80%; font-weight: normal;
+    color: var(--text);
 }
 #titleLineExp length {
     font-size: 70%; font-weight: normal;
@@ -198,9 +199,11 @@ p{
 }
 #titleLineEdu titles{
     font-size: 85%;
+    color: var(--text);
 }
 #titleLineEdu location {
     font-size: 80%; font-weight: normal;
+    color: var(--text);
 }
 #titleLineEdu length {
     font-size: 70%; font-weight: normal;
@@ -208,9 +211,9 @@ p{
 }
 
 #projectHeaders {
-    text-decoration:wavy;
     font-weight: normal;
     font-size: larger;
+    color: var(--text);
 }
 
 
@@ -274,6 +277,10 @@ label {
 .flex {
     text-align: center;
     padding-top: 5px;
+}
+
+#unorderedLists {
+    color: var(--text);
 }
 
 .flexLists {
