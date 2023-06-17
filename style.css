@@ -369,6 +369,23 @@ Contact Page
     padding-right: 10px;
 }
 
-#contactButtonPics {
-    height: auto;
+#resumeButtonContainer {
+    margin: auto;
+}
+
+#resumeDownloadButton {
+    height: 40px;
+    width: 200px;
+    margin: auto;
+    padding-top: 16px;
+    align-items: center;
+    border: 3px var(--circlebg) solid;
+    background: var(--bkg1);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+#resumeDownloadButton:hover {
+    background: var(--switchbg);
 }
