@@ -207,6 +207,13 @@ p{
     color: var(--bkg2);
 }
 
+#projectHeaders {
+    text-decoration:wavy;
+    font-weight: normal;
+    font-size: larger;
+}
+
+
 #profilePic  {
     float: left;    
     margin-left: 130px;
