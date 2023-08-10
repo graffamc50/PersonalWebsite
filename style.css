@@ -322,6 +322,7 @@ body {
     transition: var(--default-transition);
     position: absolute;
     left: 50%;
+    margin-top: 80px;
 }
 
 
