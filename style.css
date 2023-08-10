@@ -170,62 +170,66 @@ p{
     transition: var(--default-transition);
 }
 
+
+
+
+
+
 @import url(https://fonts.googleapis.com/css?family=Lato);
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-size: 16px;
-    font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
 }
 .timeline ul {
-    padding: 50px 0;
+  padding: 50px 0;
 }
 .timeline ul li {
-
-    position: relative;
-    margin: 0 auto;
-    width: 5px;
-    padding-bottom: 40px;
-    list-style-type: none;
+  position: relative;
+  margin: 0 auto;
+  width: 5px;
+  padding-bottom: 40px;
+  list-style-type: none;
 }
 .timeline ul li:last-child {
-    padding-bottom: 7px;
+  padding-bottom: 7px;
 }
 .timeline ul li:before {
-    content: "";
-    background: #faf8eb;
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    width: 20px;
-    height: 20px;
-    border: 3px solid var(--circlebg);
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
+  content: "";
+  background: #faf8eb;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border: 3px solid var(--circlebg);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
 }
 .timeline ul li .hidden {
-    opacity: 0;
+  opacity: 0;
 }
 .timeline ul li .content {
-    background: #67CC8E;
-    position: relative;
-    top: 7px;
-    width: 450px;
-    padding: 20px;
-    transition: all 0.4s ease-in-out;  
-    z-index: 14;
-    box-shadow: 7px 6px 15px 0px rgba(0,0,0,0.25);
+  background: #67CC8E;
+  position: relative;
+  top: 7px;
+  width: 450px;
+  padding: 20px;
+  transition: all 0.4s ease-in-out;  
+  z-index: 14;
+  box-shadow: 7px 6px 15px 0px rgba(0,0,0,0.25);
 }
 .timeline ul li .content *{
     color: #fff;
@@ -247,31 +251,31 @@ body {
     background: #e6e6e6;
 }
 .timeline ul li .content p {
-    text-align: left;
+  text-align: left;
 }
 .timeline ul li .content:before {
-    content: "";
-    background: inherit;
-    position: absolute;
-    top: 0px;
-    width: 38px;
-    height: 5px;
+  content: "";
+  background: inherit;
+  position: absolute;
+  top: 0px;
+  width: 38px;
+  height: 5px;
 }
 .timeline ul li:nth-child(odd) .content {
-    left: 50px;
-    background: #01016f;
-    border-radius: 0px 4px 4px 4px;
+  left: 50px;
+  background: #01016f;
+  border-radius: 0px 4px 4px 4px;
 }
 .timeline ul li:nth-child(odd) .content:before {
-    left: -38px;
+  left: -38px;
 }
 .timeline ul li:nth-child(even) .content {
-    left: calc(-450px - 45px);
-    background: #01016f;
-    border-radius: 4px 0px 4px 4px;
+  left: calc(-450px - 45px);
+  background: #01016f;
+  border-radius: 4px 0px 4px 4px;
 }
 .timeline ul li:nth-child(even) .content:before {
-    right: -38px;
+  right: -38px;
 }
 /* **** custom css*/
 .timeline-content-info{
@@ -281,43 +285,36 @@ body {
     padding: 2%;
     background-color: #6497bf;
 }
-.content-skills{
-    margin: 15px 0px 0px 0px;
-}
-.content-skills span{
-    background: #d8031c;
-    border-radius: 4px;
-    padding: 2px;
-}
 /*****************/
 /* -------------------------
------ Media Queries ----- 
+   ----- Media Queries ----- 
    ------------------------- */
 @media screen and (max-width: 1020px) {
-    .timeline ul li .content {
+  .timeline ul li .content {
     width: 41vw;
-    }
+  }
 
-    .timeline ul li:nth-child(even) .content {
-        left: calc(-41vw - 45px);
-    }
+  .timeline ul li:nth-child(even) .content {
+    left: calc(-41vw - 45px);
+  }
 }
 @media screen and (max-width: 700px) {
-    .timeline ul li {
+  .timeline ul li {
     margin-left: 20px;
-    }
-    .timeline ul li .content {
+  }
+  .timeline ul li .content {
     width: calc(100vw - 100px);
-    }
-    .timeline ul li:nth-child(even) .content {
+  }
+  .timeline ul li:nth-child(even) .content {
     left: 45px;
     background: #01016f;
     border-radius: 0px 4px 4px 4px;
-    }
-    .timeline ul li:nth-child(even) .content:before {
+  }
+  .timeline ul li:nth-child(even) .content:before {
     left: -33px;
-    }
+  }
 }
+
 
 #timeline {
     border-left: 6px solid var(--circlebg);
