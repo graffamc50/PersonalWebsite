@@ -393,7 +393,6 @@ body {
     position: relative;
     margin: 2em auto;
     box-shadow: var(--bkg2) 0 0 77px;
-    margin-bottom: 400px;
 }
 
 label {
@@ -460,6 +459,23 @@ label {
 /*
 Project Page Accordian
 */
+#GoalsTitle {
+    padding: 1em 3em;
+    z-index: 1;
+    color: var(--text);
+    background: var(--bkg1);
+    border: 1px solid var(--bkg2);
+}
+input[type="checkbox"] {
+    display: none;
+}
+input[type="checkbox"]:checked + #GoalsTitle + .content {
+    max-height: 555px;
+}
+input[type="checkbox"]:checked + #GoalsTitle + .content p {
+    opacity: 1;
+    transform: scale(1);
+}
 
 .title {
     padding: 1em 3em;
