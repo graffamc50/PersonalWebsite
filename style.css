@@ -318,7 +318,7 @@ body {
 
 #timeline {
     border-left: 6px solid var(--circlebg);
-    height: 1000px;
+    height: 3000px;
     transition: var(--default-transition);
     position: absolute;
     left: 50%;
